@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Noto Sans JP", system-ui, -apple-system, sans-serif;
+}
+
+.display-font { font-family: "Noto Serif JP", serif; }
+.mono-font { font-family: "JetBrains Mono", "Menlo", monospace; }
+.accent { color: #b13a30; }
+.accent-bg { background: #b13a30; }
+.accent-border { border-color: #b13a30; }
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
