@@ -142,7 +142,7 @@ export default function Page() {
       // web_search の結果でトークンを大量消費するため、次のリクエストまで25秒待機
       if (i < target.length - 1 && !stopRef.current) {
         log(`次の処理まで25秒待機 (レート制限回避)`);
-        await new Promise((resolve) => setTimeout(resolve, 25000));
+        await new Promise((resolve) => setTimeout(resolve, 40000));
       }
     }
 
